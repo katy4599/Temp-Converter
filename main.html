@@ -9,19 +9,65 @@
 <body>
     <main id="background-image">
         <header>
-            <h1>It's How Hot?</h1>
+            <h1 id="statement">It's How Hot?</h1>
         </header>
-        <div class="inputs">
-            
-            <label for="celcius">Celcius</label><br>
-            <input type="number" name="celcius" id="celcius" class="input">
-            <label for="fahrenheit">Fahrenheit</label><br>
-            <input type="number" name="fahrenheit" id="fahrenheit" class="input">
-            <label for="kelvin">Kelvin</label><br>
-            <input type="number" name="kelvin" id="kelvin" class="input">
-            <input type="reset" class="reset" value="Reset" onclick="clearFields()">
-            
+        <div>
+            <div class="inputs">
+                
+                <label for="celcius">Celcius</label><br>
+                <input type="number" name="celcius" id="celcius" class="input">
+                <p class="absolutes" id="p1"></p>
+                <label for="fahrenheit">Fahrenheit</label><br>
+                <input type="number" name="fahrenheit" id="fahrenheit" class="input">
+                <p class="absolutes" id="p2"></p>
+                <label for="kelvin">Kelvin</label><br>
+                <input type="number" name="kelvin" id="kelvin" class="input">
+                <p class="absolutes" id="p3"></p>
+                <label for="rankine">Rankine</label><br>
+                <input type="number" name="rankine" id="rankine" class="input">
+                <p class="absolutes" id="p4"></p>
+                <input type="reset" class="reset" value="Reset" onclick="clearFields()">
+            </div>
+            <div>   
+                <table class="table">
+                    <caption>Let's Compare</caption>
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>Celcius</th>
+                        <th>Farhenheit</th>
+                        <th>Kelvin</th>
+                        <th>Rankine </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Absolute Zero</td>
+                        <td>-273.15 C</td>
+                        <td>-459.67 F</td>
+                        <td>0 K</td>
+                        <td>0 R</td>
+                    </tr>
+                    <tr>
+                        <td>Water Freezes</td>
+                        <td>0 C</td>
+                        <td>32 F</td>
+                        <td>273.15 K</td>
+                        <td>491.67 R</td>
+                    </tr>
+                    <tr>
+                        <td>Water Boils</td>
+                        <td>99.98 C</td>
+                        <td>211.97 F</td>
+                        <td>373.13 K</td>
+                        <td>671.64</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
+        
+        
         
     </main>
 
