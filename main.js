@@ -25,13 +25,13 @@ const inputs = document.getElementsByClassName("input");
                 if (value <= -273.15) {
                     element1.innerHTML = "That is below absolute zero.";
                 }else if (value > -273.15 && value < 10) {
-                    backgroundImage.style.backgroundImage = "url('/assests/winter.jpg')";
+                    backgroundImage.style.backgroundImage = "url('./assests/winter.jpg')";
                     statement.innerHTML = "Grab your Coat!";
                 } else if (value > 10 && value < 26.666666666666664) {
-                    backgroundImage.style.backgroundImage = "url('/assests/niceweather.jpg')";
+                    backgroundImage.style.backgroundImage = "url('./assests/niceweather.jpg')";
                     statement.innerHTML = "Let's play outside!";   
                 } else {
-                    backgroundImage.style.backgroundImage = "url('/assests/sunnyearth.jpg')";
+                    backgroundImage.style.backgroundImage = "url('./assests/sunnyearth.jpg')";
                     statement.innerHTML = "The glaciers are melting!";    
                 }
                 break;
@@ -42,13 +42,13 @@ const inputs = document.getElementsByClassName("input");
                 if (value <= -459.67) {
                     element2.innerHTML = "That is below absolute zero.";
                 } else if (value <= 50) {
-                    backgroundImage.style.backgroundImage = "url('/assests/winter.jpg')";
+                    backgroundImage.style.backgroundImage = "url('./assests/winter.jpg')";
                     statement.innerHTML = "Grab your Coat!";    
                 } else if (value > 50 && value < 80) {
-                    backgroundImage.style.backgroundImage = "url('/assests/niceweather.jpg')";
+                    backgroundImage.style.backgroundImage = "url('./assests/niceweather.jpg')";
                     statement.innerHTML = "Let's play outside!"; 
                 } else {
-                    backgroundImage.style.backgroundImage = "url('/assests/sunnyearth.jpg')";
+                    backgroundImage.style.backgroundImage = "url('./assests/sunnyearth.jpg')";
                     statement.innerHTML = "The glaciers are melting!";
                 }
                 break;
@@ -59,13 +59,13 @@ const inputs = document.getElementsByClassName("input");
                 if (value <= 0) {
                     element3.innerHTML = "That is below absolute zero.";
                 } else if (value <= 283.15) {
-                    backgroundImage.style.backgroundImage = "url('/assests/winter.jpg')";
+                    backgroundImage.style.backgroundImage = "url('./assests/winter.jpg')";
                     statement.innerHTML = "Grab your Coat!";   
                 } else if (value > 283.15 && value < 299.81666666666666) {
-                    backgroundImage.style.backgroundImage = "url('/assests/niceweather.jpg')";
+                    backgroundImage.style.backgroundImage = "url('./assests/niceweather.jpg')";
                     statement.innerHTML = "Let's play outside!";  
                 } else {
-                    backgroundImage.style.backgroundImage = "url('/assests/sunnyearth.jpg')";
+                    backgroundImage.style.backgroundImage = "url('./assests/sunnyearth.jpg')";
                     statement.innerHTML = "The glaciers are melting!"; 
                 }
                 break;
@@ -76,13 +76,13 @@ const inputs = document.getElementsByClassName("input");
                 if (value <= 0) {
                     element4.innerHTML = "That is below absolute zero.";
                 } else if (value <= 509.67) {
-                    backgroundImage.style.backgroundImage = "url('/assests/winter.jpg')";
+                    backgroundImage.style.backgroundImage = "url('./assests/winter.jpg')";
                     statement.innerHTML = "Grab your Coat!";   
                 } else if (value > 509.67 && value < 539.67 ) {
-                    backgroundImage.style.backgroundImage = "url('/assests/niceweather.jpg')";
+                    backgroundImage.style.backgroundImage = "url('./assests/niceweather.jpg')";
                     statement.innerHTML = "Let's play outside!";  
                 } else {
-                    backgroundImage.style.backgroundImage = "url('/assests/sunnyearth.jpg')";
+                    backgroundImage.style.backgroundImage = "url('./assests/sunnyearth.jpg')";
                     statement.innerHTML = "The glaciers are melting!"; 
                 }
                 break;
@@ -100,6 +100,6 @@ function clearFields() {
     element3.innerHTML = "";
     element4.innerHTML = "";
     statement.innerHTML = "It's How Hot?"
-    backgroundImage.style.backgroundImage = "url('/assests/thermometer.jpg')";
+    backgroundImage.style.backgroundImage = "url('./assests/thermometer.jpg')";
    
 }
