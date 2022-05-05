@@ -84,20 +84,4 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.table {
-    width:40%;
-    border:2px solid #C0C0C0;
-    border-collapse:collapse;
-    padding:5px;
-    margin-right: 15%;
-    margin-top: 30%;
-}
-.table th {
-    border:2px solid #C0C0C0;
-    padding:5px;
-    background:#DDDADA;
-}
-.table td {
-    border:2px solid #C0C0C0;
-    padding:5px;
-}
+

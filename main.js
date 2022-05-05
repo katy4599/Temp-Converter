@@ -19,9 +19,9 @@ const inputs = document.getElementsByClassName("input");
         let value = parseFloat(event.target.value);
         switch(event.target.name) {
             case "celcius":
-                fahrenheitInput.value = (value * 1.8) + 32;
-                kelvinInput.value = value + 273.15;
-                rankineInput.value = (value + 273.15) * 1.8;
+                fahrenheitInput.value = Math.floor((value * 1.8) + 32);
+                kelvinInput.value = Math.floor(value + 273.15);
+                rankineInput.value = Math.floor((value + 273.15) * 1.8);
                 if (value <= -273.15) {
                     element1.innerHTML = "That is below absolute zero.";
                 }else if (value > -273.15 && value < 10) {
@@ -36,9 +36,9 @@ const inputs = document.getElementsByClassName("input");
                 }
                 break;
             case "fahrenheit":
-                celciusInput.value = (value - 32) / 1.8;
-                kelvinInput.value = ((value - 32) / 1.8) + 273.15;
-                rankineInput.value = value + 459.67;
+                celciusInput.value = Math.floor((value - 32) / 1.8);
+                kelvinInput.value = Math.floor(((value - 32) / 1.8) + 273.15);
+                rankineInput.value = Math.floor(value + 459.67);
                 if (value <= -459.67) {
                     element2.innerHTML = "That is below absolute zero.";
                 } else if (value <= 50) {
@@ -53,9 +53,9 @@ const inputs = document.getElementsByClassName("input");
                 }
                 break;
             case "kelvin":
-                celciusInput.value = value - 273.15;
-                fahrenheitInput.value = ((value - 273.15) * 1.8) + 32;
-                rankineInput.value = value * 1.8;
+                celciusInput.value = Math.floor(value - 273.15);
+                fahrenheitInput.value = Math.floor(((value - 273.15) * 1.8) + 32);
+                rankineInput.value = Math.floor(value * 1.8);
                 if (value <= 0) {
                     element3.innerHTML = "That is below absolute zero.";
                 } else if (value <= 283.15) {
@@ -70,9 +70,9 @@ const inputs = document.getElementsByClassName("input");
                 }
                 break;
             case "rankine":
-                celciusInput.value = (value - 491.67) / 1.8;
-                fahrenheitInput.value = value - 459.67;
-                kelvinInput.value = celciusInput.value + 273.15;
+                celciusInput.value = Math.floor((value - 491.67) / 1.8);
+                fahrenheitInput.value = Math.floor(value - 459.67);
+                kelvinInput.value = Math.floor(((value - 491.67) / 1.8) + 273.15);
                 if (value <= 0) {
                     element4.innerHTML = "That is below absolute zero.";
                 } else if (value <= 509.67) {
